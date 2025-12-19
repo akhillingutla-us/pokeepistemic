@@ -101,12 +101,27 @@ Garchomp, Dragapult, Gholdengo, Kingambit, Great Tusk, Iron Valiant, Rillaboom, 
 Generate Kripke model diagrams:
 
 ```bash
-python visualize.py
+python visualize.py #pokémonName
 ```
 
 This creates PNG files showing:
-- 🟢 Green nodes = Remaining possible worlds
-- 🔴 Red (faded) nodes = Eliminated worlds
+- **Worlds (w1–w4)**  
+  Each world corresponds to a *possible Dragapult build*, defined by a specific item and role:
+  - Choice Specs: special attacker (e.g., Draco Meteor, Flamethrower, Shadow Ball)
+  - Choice Band: physical attacker (e.g., Dragon Darts, Sucker Punch, U-turn)
+  - Life Orb: mixed attacker with broad coverage
+  - Heavy-Duty Boots: pivot or utility variant
+
+- **Valuations (V)**  
+  The propositions listed inside each node are the properties that are true if that world is the actual one, such as Dragapult’s item and available moves.
+
+- **Accessibility Relation (R)**  
+  All worlds are mutually accessible, meaning that from the player’s current knowledge, every Dragapult set is still possible.
+
+- **Gameplay Meaning**  
+  Before Dragapult reveals a move, item, or damage output, the player cannot rule out any of these builds. The model captures this initial state of complete uncertainty.
+
+As the battle progresses and Dragapult reveals information (for example, using a physical move or avoiding hazard damage), some worlds would be eliminated, reducing the set of possible worlds.
 
 ## References
 
