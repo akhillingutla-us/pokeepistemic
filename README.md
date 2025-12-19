@@ -15,7 +15,7 @@ In competitive Pokémon, you face massive uncertainty—your opponent's movesets
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/pokeepistemic.git
+git clone https://github.com/USERNAME/pokeepistemic.git
 cd pokeepistemic
 pip install -r requirements.txt
 ```
