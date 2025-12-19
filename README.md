@@ -84,17 +84,15 @@ You "know" something only if it's true in ALL remaining possible worlds.
 pokeepistemic/
 ├── main.py           # CLI interface
 ├── kripke.py         # Kripke model engine
-├── pokemon_data.py   # Smogon Gen9 OU sets (23 Pokémon, 62 sets)
-├── visualize.py      # NetworkX visualization
+├── pokemon_data.py   # Smogon Gen9 OU sets 
+├── visualize.py      # Matplotlib visualization
 ├── requirements.txt
 └── README.md
 ```
 
 ## Supported Pokémon
 
-Data sourced from [Smogon Gen9 OU](https://pkmn.github.io/smogon/data/sets/):
-
-Garchomp, Dragapult, Gholdengo, Kingambit, Great Tusk, Iron Valiant, Rillaboom, Heatran, Landorus-Therian, Kyurem, Darkrai, Dragonite, Raging Bolt, Ting-Lu, Ogerpon-Wellspring, Gliscor, Corviknight, Toxapex, Weavile, Skeledirge, Zamazenta, Meowscarada, Iron Crown
+Data sourced from [Smogon Gen9 OU API](https://pkmn.github.io/smogon/data/sets/):
 
 ## Visualization
 
